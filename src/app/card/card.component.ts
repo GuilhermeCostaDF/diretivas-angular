@@ -25,6 +25,20 @@ export class CardComponent implements OnInit {
     },
   ];
 
+  produto: any;
+  nomeProduto: string = '';
+  precoProduto: number = 0;
+
+  public adicionarProduto(): void{
+
+    this.produto = {
+      nome: this.nomeProduto,
+      valor: this.precoProduto
+    }
+
+    this.produtos.push(this.produto)
+  }
+
   constructor() {}
 
   ngOnInit(): void {}

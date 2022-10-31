@@ -6,3 +6,12 @@
     <div class="preco">R$ {{ produto.valor }}</div>
   </div>
 </div>
+
+<hr>
+<br>
+
+Nome:
+<input type="text" [(ngModel)] = "nomeProduto">
+Preço:
+<input type="text" [(ngModel)] = "precoProduto">
+<button (click)="adicionarProduto()">Adicionar</button>

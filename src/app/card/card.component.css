@@ -1,0 +1,29 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 0.5em;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produto, .preco {
+  width: fill;
+  padding: 1em;
+  text-align: center;
+}
+
+.produto{
+  background-color: rgb(70, 223, 172);
+  font-weight: bold;
+}
+
+.preco{
+  background-color: rgb(47, 80, 190);
+  color: antiquewhite;
+}
